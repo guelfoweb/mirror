@@ -1,0 +1,56 @@
+#!/bin/bash
+
+## Reverse bytes
+## by Gianni 'guelfoweb' Amato
+
+#
+# ----------------------------------------------------------------------------
+# "THE BEER-WARE LICENSE" (Revision 42):
+# guelfoweb@gmail.com wrote this file. As long as you retain this notice you
+# can do whatever you want with this stuff. If we meet some day, and you think
+# this stuff is worth it, you can buy me a beer in return Gianni 'guelfoweb' Amato
+# ----------------------------------------------------------------------------
+#
+
+usage(){
+	echo "Mirror by Gianni 'guelfoweb' Amato"
+	echo "usage: $0 [ source ] [ target ]"
+}
+
+if [ $# -lt 2 ]; then
+	usage
+	exit -1
+fi
+
+if [ ! -f $1 ]; then
+	echo "source file not found: $1"
+	usage
+	exit 0
+fi
+
+if [ -f $2 ]; then
+	echo "target file exists: $2"
+	usage
+	exit 0
+fi
+
+BYTEIN=`wc --byte $1 | cut -d" " -f1`	#Byte count file input
+echo "reverse current $1 in $2"
+echo "writing $BYTEIN byte(s) in $2"
+
+for i in `seq 1 $BYTEIN`
+do
+    SKIP=$(($BYTEIN - $i))	#Decreases by one
+    dd if=$1 skip=$SKIP count=1 bs=1 >> $2 2> /dev/null
+    echo -ne "."
+done
+
+BYTEOUT=`wc --byte $2 | cut -d" " -f1`	#Byte count file output
+if [ $BYTEIN = $BYTEOUT ]; then	#Byte verify
+	echo
+	echo "finished!"
+else
+	echo
+	echo "error: invalid byte(s)"
+fi
+exit 0
