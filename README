@@ -1,0 +1,32 @@
+DESCRIPTION
+===========
+
+Reverses the bytes of a file. Mirros is written in bash.
+
+
+DOWNLOAD MIRROR
+===============
+
+git clone https://github.com/guelfoweb/mirror.git
+
+
+TO USE mirror
+============
+
+   # cd mirror
+   # bash mirror
+
+
+Alternatively, set executable permissions on mirror file
+
+   # cp mirror /usr/local/bin/mirror
+   # chmod a+x /usr/local/bin/mirror
+   # mirror
+
+
+OTHER
+=====
+
+This script is currently maintained by Gianni 'guelfoweb' Amato, who can be contacted at guelfoweb@gmail.com. Suggestions and criticism are welcome.
+
+
