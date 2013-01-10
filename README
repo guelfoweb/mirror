@@ -14,14 +14,14 @@ TO USE mirror
 ============
 
    # cd mirror
-   # bash mirror
+   # python mir.py [FROM FILE] [TO FILE]
 
 
 Alternatively, set executable permissions on mirror file
 
-   # cp mirror /usr/local/bin/mirror
-   # chmod a+x /usr/local/bin/mirror
-   # mirror
+   # cp mir.py /usr/local/bin/mir
+   # chmod a+x /usr/local/bin/mir
+   # mir
 
 
 OTHER
