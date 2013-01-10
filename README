@@ -1,32 +1,33 @@
-DESCRIPTION
-===========
+WHAT IS MIR?
+============
 
-Reverses the bytes of a file. Mirros is written in bash.
+Mir (like Mirror) Reverses the bytes of a file. Mir is written in python. It work on all operating system with python interpreter (2.7.x or minor).
 
 
 DOWNLOAD MIRROR
 ===============
 
-https://github.com/guelfoweb/mirror/blob/master/mir.py
+https://raw.github.com/guelfoweb/mirror/master/mir.py
 
 
 TO USE mirror
 ============
 
-   # cd mirror
-   # python mir.py [FROM FILE] [TO FILE]
+   $ python mir.py [FROM FILE] [TO FILE]
 
 
-Alternatively, set executable permissions on mirror file
+Alternatively, set executable permissions on mir file
 
    # cp mir.py /usr/local/bin/mir
    # chmod a+x /usr/local/bin/mir
-   # mir
+   $ mir
 
 
 OTHER
 =====
 
 This script is currently maintained by Gianni 'guelfoweb' Amato, who can be contacted at guelfoweb@gmail.com. Suggestions and criticism are welcome.
+
+Enjoy!
 
 
