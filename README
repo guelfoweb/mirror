@@ -7,7 +7,7 @@ Reverses the bytes of a file. Mirros is written in bash.
 DOWNLOAD MIRROR
 ===============
 
-git clone https://github.com/guelfoweb/mirror.git
+https://github.com/guelfoweb/mirror/blob/master/mir.py
 
 
 TO USE mirror
