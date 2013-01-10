@@ -1,7 +1,7 @@
 WHAT IS MIR?
 ============
 
-Mir (like Mirror) Reverses the bytes of a file. Mir is written in python. It work on all operating system with python interpreter (2.7.x or minor).
+Mir (like Mirror) reverses the bytes of a file. Mir is written in python, it work on all operating system with python interpreter (2.7.x or minor).
 
 
 DOWNLOAD MIRROR
@@ -11,12 +11,12 @@ https://raw.github.com/guelfoweb/mirror/master/mir.py
 
 
 TO USE mirror
-============
+=============
 
    $ python mir.py [FROM FILE] [TO FILE]
 
 
-Alternatively, set executable permissions on mir file
+Alternatively, set executable permissions on mir file:
 
    # cp mir.py /usr/local/bin/mir
    # chmod a+x /usr/local/bin/mir
