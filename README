@@ -7,6 +7,7 @@ Mir (like Mirror) reverses the bytes of a file. Mir is written in python, it wor
 DOWNLOAD MIRROR
 ===============
 
+Use fork by slacknux » https://github.com/slacknux/mirror/blob/master/mir.py
 https://raw.github.com/guelfoweb/mirror/master/mir.py
 
 
